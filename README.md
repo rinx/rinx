@@ -1,6 +1,6 @@
+<!--
 ### Hi there 👋
 
-<!--
 **rinx/rinx** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
@@ -14,3 +14,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=rinx&show_icons=true)
+
+![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=rinx&hide=javascript,html,c,python)
