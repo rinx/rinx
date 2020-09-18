@@ -17,4 +17,10 @@ Here are some ideas to get you started:
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=rinx&show_icons=true)
 
+I'm currently working on [Vald 🌲](https://github.com/vdaas/vald).  
+I usually write Clojure codes.  
+love ☁️ & 🌈 & ☕️ 
+
+<!--
 ![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=rinx&hide=javascript,html,c,python)
+-->
