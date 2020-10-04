@@ -21,7 +21,7 @@ I'm currently working on [Vald 🌲](https://github.com/vdaas/vald).
 I usually write Clojure codes.  
 love ☁️ & 🌈 & ☕️ 
 
-- [sourcehut](https://lists.sr.ht/~rinx)
+- [sourcehut](https://git.sr.ht/~rinx)
 
 <!--
 ![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=rinx&hide=javascript,html,c,python)
