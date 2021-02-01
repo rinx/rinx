@@ -30,5 +30,6 @@ jobs:
       - name: Update README
         run: |
           stars=`./fetch ${GITHUB_TOKEN}`
+          echo "Stars: $stars"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
