@@ -1,0 +1,36 @@
+name: build
+on:
+  push:
+    branches:
+      - main
+      - master
+  schedule:
+    - cron: '0 1 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/rinx/alpine-fennel:latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          apk update
+          apk add curl-dev gcc g++
+      - name: Install Luarocks dependencies
+        run: |
+          luarocks install http
+          luarocks install dkjson
+          luarocks install Lua-cURL
+      - name: Compile
+        run: |
+          fennel --compile-binary \
+            fetch.fnl \
+            fetch \
+            /usr/lua5.3/lib/liblua.a \
+            /usr/include/lua5.3
+      - name: Update README
+        run: |
+          stars=`./fetch ${GITHUB_TOKEN}`
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
