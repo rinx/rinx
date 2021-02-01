@@ -17,7 +17,6 @@ jobs:
           apk update
           apk add curl-dev gcc g++
       - name: Install Luarocks dependencies
-        shell: bash
         run: |
           luarocks install dkjson
           luarocks install Lua-cURL
@@ -29,7 +28,6 @@ jobs:
             /usr/lua5.3/lib/liblua.a \
             /usr/include/lua5.3
       - name: Update README
-        shell: bash
         run: |
           stars=`./fetch ${GITHUB_TOKEN}`
         env:
