@@ -15,12 +15,12 @@ jobs:
       - name: Install dependencies
         run: |
           apk update
-          apk add curl-dev gcc g++ make bash
+          apk add curl-dev gcc g++ make bash sudo
       - name: Install Luarocks dependencies
         run: |
-          luarocks install http
-          luarocks install dkjson
-          luarocks install Lua-cURL
+          sudo luarocks install http
+          sudo luarocks install dkjson
+          sudo luarocks install Lua-cURL
       - name: Compile
         run: |
           fennel --compile-binary \
