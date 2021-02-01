@@ -15,7 +15,7 @@ jobs:
       - name: Install dependencies
         run: |
           apk update
-          apk add curl-dev gcc g++ make
+          apk add curl-dev gcc g++ make bash
       - name: Install Luarocks dependencies
         run: |
           luarocks install http
