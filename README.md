@@ -1,3 +1,5 @@
-<!-- If you're using "main" as default branch -->
-![Metrics](https://github.com/rinx/rinx/blob/main/github-metrics.svg)
-[sourcehut](https://git.sr.ht/~rinx)
+<p align="center">
+  <a href="https://metrics.lecoq.io/about/rinx"><img src="https://github.com/rinx/rinx/blob/main/github-metrics.svg" alt="Metrics"></a>
+</p>
+
+- [sourcehut](https://git.sr.ht/~rinx)
