@@ -1,35 +1,51 @@
-name: build
+# Visit https://github.com/lowlighter/metrics/blob/master/action.yml for full reference
+name: Metrics
 on:
-  push:
-    branches:
-      - main
-  schedule:
-    - cron: '0 1 * * *'
+  # Schedule updates (each hour)
+  schedule: [{cron: "0 * * * *"}]
+  # Lines below let you run workflow manually and on each commit
+  workflow_dispatch:
+  push: {branches: ["master", "main"]}
 jobs:
-  build:
+  github-metrics:
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/rinx/alpine-fennel:latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Install dependencies
-        run: |
-          apk update
-          apk add curl-dev gcc g++
-      - name: Install Luarocks dependencies
-        run: |
-          luarocks install dkjson
-          luarocks install Lua-cURL
-      - name: Compile
-        run: |
-          fennel --compile-binary \
-            fetch.fnl \
-            fetch \
-            /usr/lua5.3/lib/liblua.a \
-            /usr/include/lua5.3
-      - name: Update README
-        run: |
-          stars=`./fetch ${GITHUB_TOKEN}`
-          echo "Stars: $stars"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+          # Options
+          user: rinx
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Tokyo
+          plugin_achievements: yes
+          plugin_achievements_secrets: yes
+          plugin_achievements_threshold: C
+          plugin_activity: yes
+          plugin_activity_days: 14
+          plugin_activity_filter: all
+          plugin_activity_limit: 5
+          plugin_activity_load: 300
+          plugin_activity_visibility: all
+          plugin_followup: yes
+          plugin_followup_sections: repositories
+          plugin_habits: yes
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_from: 200
+          plugin_introduction: yes
+          plugin_introduction_title: yes
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+          plugin_languages: yes
+          plugin_languages_colors: github
+          plugin_languages_limit: 8
+          plugin_languages_recent.days: 14
+          plugin_languages_recent.load: 300
+          plugin_languages_sections: most-used
+          plugin_languages_threshold: 0%
+          plugin_licenses: yes
+          plugin_licenses_legal: yes
+          plugin_notable: yes
+          plugin_stargazers: yes
