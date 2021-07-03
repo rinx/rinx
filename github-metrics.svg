@@ -2807,7 +2807,7 @@
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="132.27126589748224 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="132.27476023230594 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g xmlns="http://www.w3.org/2000/svg" transform="translate(5 4)" fill="none" fill-rule="evenodd">
@@ -2951,7 +2951,7 @@
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="121.02102102102101 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="121.95195195195195 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g transform="translate(4 4)" fill="none" fill-rule="evenodd">
@@ -2975,11 +2975,11 @@
                   Maintainer
                   
                     <span class="gh">
-                      ranked 38.6k out of 238m repositories
+                      ranked 38.2k out of 238m repositories
                     </span>
                   
                 </div>
-                                <div class="text">Maintaining a repository with 781 stars</div>
+                                <div class="text">Maintaining a repository with 787 stars</div>
                             </div>
                         </div>
                         <div class="achievement c largeable-width-half">
@@ -3104,7 +3104,7 @@
                   Influencer
                   
                     <span class="gh">
-                      ranked 84.6k out of 73m users
+                      ranked 84.7k out of 73m users
                     </span>
                   
                 </div>
@@ -3301,7 +3301,7 @@
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated Sat, 03 Jul 2021 19:09:00 (timezone Asia/Tokyo) with lowlighter/metrics@3.10.0</span>
+                <span>Last updated Sat, 03 Jul 2021 20:08:14 (timezone Asia/Tokyo) with lowlighter/metrics@3.10.0</span>
             </footer>
             <div id="metrics-end"></div>
         </div>
