@@ -1,1 +1,1 @@
-- [sourcehut](https://git.sr.ht/~rinx)
+- [sourcehut](https://git.sr.ht/~rin)
