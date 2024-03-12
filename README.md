@@ -1,1 +1,0 @@
-- [sourcehut](https://git.sr.ht/~rin)
